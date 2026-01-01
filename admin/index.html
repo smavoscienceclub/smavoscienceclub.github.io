@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SSC Admin Panel</title>
-	<!-- Memanggil script Decap CMS -->
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-    <!-- Script untuk Netlify Identity (Biar bisa login gratis) -->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSC Admin Panel</title>
+    <!-- Script Identity untuk menangani login -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Menggunakan versi 3.3.3 yang lebih stabil untuk menghindari bug render -->
+    <script src="https://unpkg.com/decap-cms@3.3.3/dist/decap-cms.js"></script>
+
     <script>
-      // Script tambahan agar setelah login langsung balik ke halaman admin
+      // Pastikan widget login Netlify berfungsi
       if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
+        window.netlifyIdentity.on("init", (user) => {
           if (!user) {
             window.netlifyIdentity.on("login", () => {
               document.location.href = "/admin/";
@@ -22,5 +23,5 @@
         });
       }
     </script>
-</body>
+  </body>
 </html>

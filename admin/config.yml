@@ -1,7 +1,7 @@
 # HMMMMMMM oke
 backend:
   name: git-gateway
-  branch: main # Pastikan ini nama branch utama kamu
+  branch: master # Pastikan ini nama branch utama kamu
 
 # Folder tempat menyimpan gambar yang diupload lewat CMS
 media_folder: "assets/img/uploads"
