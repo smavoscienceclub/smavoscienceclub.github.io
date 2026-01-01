@@ -1,0 +1,30 @@
+# HMMMMMMM oke
+backend:
+  name: git-gateway
+  branch: main # Pastikan ini nama branch utama kamu
+
+# Folder tempat menyimpan gambar yang diupload lewat CMS
+media_folder: "assets/img/uploads"
+public_folder: "/assets/img/uploads"
+
+# Struktur konten website
+collections:
+  - name: "berita" # Nama internal
+    label: "Berita & Artikel" # Nama yang muncul di dashboard
+    folder: "_posts" # Folder di GitHub tempat file berita disimpan
+    create: true # Bisa tambah berita baru
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Judul Berita", name: "title", widget: "string" }
+      - { label: "Tanggal Publish", name: "date", widget: "datetime" }
+      - { label: "Gambar Sampul", name: "image", widget: "image" }
+      - { label: "Isi Berita", name: "body", widget: "markdown" }
+
+  - name: "divisi"
+    label: "Data Divisi"
+    folder: "_divisi"
+    create: false # Karena divisi jumlahnya tetap
+    fields:
+      - { label: "Nama Divisi", name: "title", widget: "string" }
+      - { label: "Deskripsi Singkat", name: "description", widget: "text" }
+      - { label: "Isi Konten", name: "body", widget: "markdown" }
