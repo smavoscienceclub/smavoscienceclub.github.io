@@ -35,30 +35,37 @@
 	</nav>
 
 {% assign latest = site.posts.first %}
-{{ site.posts | size }}
-<section class="bg-gray-50">
-  <div class="max-w-6xl mx-auto px-6 py-16">
+<section class="relative bg-gray-900">
+  
+  <a href="{{ latest.url }}" class="block group">
     
-    <a href="{{ latest.url }}" class="grid md:grid-cols-2 gap-8 items-center group">
-      
-      <div class="overflow-hidden rounded-2xl">
-        <img src="{{ latest.image }}" 
-             class="w-full h-[320px] object-cover group-hover:scale-105 transition duration-300">
-      </div>
+    <!-- Background image -->
+    <div class="relative h-[420px] md:h-[520px] w-full overflow-hidden">
+      <img 
+        src="{{ latest.image }}"
+        class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500"
+      >
 
-      <div>
-        <p class="text-sm text-gray-500 mb-2">Latest Article</p>
-        <h2 class="text-3xl font-bold text-gray-900 group-hover:text-primary transition">
+      <!-- Gradient overlay biar teks kebaca -->
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+
+      <!-- Text content -->
+      <div class="absolute bottom-0 left-0 p-6 md:p-10 max-w-2xl">
+        <p class="text-sm text-gray-200 mb-2">Terbaru</p>
+        
+        <h2 class="text-3xl md:text-4xl font-bold text-white group-hover:text-gray-200 transition">
           {{ latest.title }}
         </h2>
-        <p class="mt-4 text-gray-600">
+        
+        <p class="mt-3 text-gray-200">
           {{ latest.excerpt }}
         </p>
       </div>
 
-    </a>
+    </div>
 
-  </div>
+  </a>
+
 </section>
 <script>
   if (window.netlifyIdentity) {
