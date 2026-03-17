@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SSC</title>
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+{% include navbar.html %}
+<!-- Landing -->
+<main>
+    {{ content }}
+</main>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+
+</script>	
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: '#1e40af',
+        }
+      }
+    }
+  }
+</script>
+<script>
+const btn = document.getElementById('menuBtn');
+const menu = document.getElementById('mobileMenu');
+const overlay = document.getElementById('overlay');
+
+btn.addEventListener('click', () => {
+  menu.classList.remove('translate-x-full');
+  overlay.classList.remove('hidden');
+});
+
+overlay.addEventListener('click', () => {
+  menu.classList.add('translate-x-full');
+  overlay.classList.add('hidden');
+});
+</script>
+</body>
+</html>
