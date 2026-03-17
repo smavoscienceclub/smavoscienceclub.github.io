@@ -51,3 +51,53 @@ Berikut adalah daftar peserta yang lolos pada masing-masing bidang:
 | 3   | PRAMUDHIO SAWERIGADING IHSAN | X-3   | 53          |
 | 4   | MUSYAFFA NURESHAN PAHLEVI    | XI-B2 | 52          |
 | 5   | RAKA SYABANY AMSYAH          | X-8   | 51          |
+
+**Ekonomi**
+
+| No  | Nama                 | Kelas | Nilai Akhir |
+| --- | -------------------- | ----- | ----------- |
+| 1   | QUENNA VALENCIA      | XI-D1 | 67          |
+| 2   | DAVINA MUTIARA ARFI  | XI-B2 | 64          |
+| 3   | PUTRI KHAILA AZZAHRA | XI-B2 | 60          |
+| 4   | FADYA MALIKHA        | X-3   | 57          |
+| 5   | QUINTANIA AURA PUTRI | XI-B1 | 56          |
+
+**Kebumian**
+
+| No  | Nama                   | Kelas | Nilai Akhir |
+| --- | ---------------------- | ----- | ----------- |
+| 1   | SANLIA MORANDA. S      | XI-B1 | 50          |
+| 2   | GAN MUHAMMAD RIZKY     | XI-D1 | 50          |
+| 3   | ABHIPRAYA FAHIM        | XI-D2 | 49          |
+| 4   | MUHAMMAD YAFIARGI S.   | X-8   | 46          |
+| 5   | KHAIRA RABBANI TSALASA | XI-F1 | 39          |
+
+**Fisika**
+
+| No  | Nama                  | Kelas | Nilai Akhir |
+| --- | --------------------- | ----- | ----------- |
+| 1   | RIFQI ANINDYA PUTRA   | XI-E1 | 106         |
+| 2   | FITRAH THIRAFI        | X-9   | 101         |
+| 3   | DICKY MAULANA         | XI-D1 | 92          |
+| 4   | CHELSY ASHYLA NAFIZA  | XI-D2 | 87          |
+| 5   | VINDY APRILIA KHANAYA | XI-D3 | 78          |
+
+**Astronomi**
+
+| No  | Nama                            | Kelas | Nilai Akhir |
+| --- | ------------------------------- | ----- | ----------- |
+| 1   | MUHAMMAD ATHA FAUZANSYAH        | XI-E1 | 93          |
+| 2   | MUHAMMAD GHIFARAIDOSATA S.      | XI-E1 | 41          |
+| 3   | JESSLYN QUINN GABRIELLE SITORUS | X-1   | 33          |
+| 4   | AULIA INTAN RHAMADHANI          | X-11  | 32          |
+| 5   | FARID PRADANA                   | X-8   | 24          |
+
+**Biologi**
+
+| No  | Nama                     | Kelas | Nilai Akhir |
+| --- | ------------------------ | ----- | ----------- |
+| 1   | ANINDYA ZHAFIRA SANI     | XI-D1 | 75          |
+| 2   | AUFA SYAFIQ DISASTRA     | XI-D2 | 67          |
+| 3   | GRASELA RIYANTI          | XI-D3 | 70          |
+| 4   | ABDUL GHOFAR             | X-10  | 67          |
+| 5   | PRISCILIA MICHELLE PASAU | X-4   | 68          |
