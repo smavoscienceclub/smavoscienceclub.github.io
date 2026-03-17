@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSC Admin Panel</title>
+    <!-- Script Identity untuk menangani login -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+  <body>
+    <!-- Menggunakan versi 3.3.3 yang lebih stabil untuk menghindari bug render -->
+    <script src="https://unpkg.com/decap-cms@3.3.3/dist/decap-cms.js"></script>
+
+    <script>
+      // Pastikan widget login Netlify berfungsi
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

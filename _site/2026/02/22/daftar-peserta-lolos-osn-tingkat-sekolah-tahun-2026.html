@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SSC</title>
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+<nav id="navbar"
+    class="bg-white shadow-sm fixed top-0 left-0 w-full z-50
+          bg-white/80 backdrop-blur
+          transition-all duration-300">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    
+    <!-- Logo -->
+    <div class="text-xl font-bold text-primary">
+     <a href="/">SSC</a>
+    </div>
+
+    <!-- RIGHT SIDE WRAPPER -->
+    <div class="flex items-center gap-6">
+     
+     <!-- Menu (desktop) -->
+     <div class="hidden md:flex space-x-8 text-gray-600 font-medium">
+       <a href="/tentang-kami/" class="hover:text-primary">Tentang Kami</a>
+        <a href="/berita/" class="hover:text-primary">Artikel</a>
+       <a href="#" class="hover:text-primary">Divisi</a>
+     </div>
+
+     <!-- CTA (desktop) -->
+     <a href="#" class="hidden md:block bg-primary text-white px-4 py-2 rounded-lg hover:opacity-90">
+       Hubungi
+     </a>
+
+     <!-- Hamburger (mobile) -->
+     <button id="menuBtn" class="md:hidden text-2xl">
+       ☰
+     </button>
+
+    </div>
+
+  </div>
+</nav>
+<!-- Spacer for navbar height -->
+<div id="navbar-spacer" class="h-16"></div>
+<script>
+  // Adjust the spacer height to match navbar height
+  function adjustNavbarSpacer() {
+    const navbar = document.getElementById('navbar');
+    const spacer = document.getElementById('navbar-spacer');
+    spacer.style.height = navbar.offsetHeight + 'px';
+  }
+  window.addEventListener('resize', adjustNavbarSpacer);
+  window.addEventListener('DOMContentLoaded', adjustNavbarSpacer);
+
+  // Sticky/fixed effect
+  window.addEventListener('scroll', function() {
+    const navbar = document.getElementById('navbar');
+    if (window.scrollY > 0) {
+     navbar.classList.add('shadow-md', 'bg-white/90', 'backdrop-blur');
+    } else {
+     navbar.classList.remove('shadow-md', 'bg-white/90', 'backdrop-blur');
+    }
+  });
+</script>
+<!-- Overlay -->
+<div id="overlay"
+     class="fixed inset-0 bg-black/40 z-40 hidden md:hidden"></div>
+
+<!-- Side drawer -->
+<div id="mobileMenu"
+     class="fixed top-0 right-0 h-full w-64 bg-white z-50
+            transform translate-x-full transition-transform duration-300
+            md:hidden">
+
+  <div class="p-6 space-y-4 font-medium text-gray-700">
+
+    <a href="#" class="block">Tentang Kami</a>
+    <a href="#" class="block">Artikel</a>
+    <a href="#" class="block">Divisi</a>
+
+    <a href="#" class="block mt-4 bg-primary text-white px-4 py-2 rounded-lg text-center">
+      Hubungi
+    </a>
+
+  </div>
+</div>
+<!-- Landing -->
+<main>
+    
+<style>
+    body {
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Ayzat88t7UFPJA2adyG6ahHT54WebtFhyg&s');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        filter: none;
+    }
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        z-index: -1;
+        background: inherit;
+        background-image: inherit;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        filter: blur(16px) brightness(0.9);
+    }
+</style>
+
+<article class="flex flex-col mx-auto my-8 w-full max-w-5xl border border-gray-300 rounded-lg p-6 md:p-8 bg-white shadow">
+    <h1 class="text-3xl font-bold mb-4">Daftar Peserta Lolos OSN Tingkat Sekolah Tahun 2026</h1>
+    <hr class="my-4 border-gray-300">
+    <div class="w-full">
+        <p>Sebanyak 45 siswa SMAN 2 Cibinong berhasil lolos dalam Seleksi Olimpiade Sains Nasional (OSN) Tingkat Sekolah Tahun 2026. Para peserta terpilih berasal dari sembilan bidang lomba, yaitu Matematika, Informatika, Kimia, Geografi, Ekonomi, Kebumian, Fisika, Astronomi, dan Biologi, dengan masing-masing bidang meloloskan lima siswa terbaik.</p>
+
+<p>Proses seleksi dilaksanakan secara ketat berdasarkan hasil penilaian yang telah ditetapkan oleh tim pembina. Peserta yang dinyatakan lolos selanjutnya akan melanjutkan pembinaan untuk menghadapi seleksi pada tahap berikutnya.</p>
+
+<p>Capaian ini diharapkan menjadi motivasi bagi seluruh siswa untuk terus mengembangkan kemampuan akademik serta berani berkompetisi dalam ajang sains bergengsi. Pihak sekolah melalui SMAVO Science Club akan terus mendukung proses pembinaan guna mempersiapkan delegasi terbaik di tingkat selanjutnya.</p>
+
+    </div>
+</article>
+
+</main>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+
+</script>	
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: '#1e40af',
+        }
+      }
+    }
+  }
+</script>
+<script>
+const btn = document.getElementById('menuBtn');
+const menu = document.getElementById('mobileMenu');
+const overlay = document.getElementById('overlay');
+
+btn.addEventListener('click', () => {
+  menu.classList.remove('translate-x-full');
+  overlay.classList.remove('hidden');
+});
+
+overlay.addEventListener('click', () => {
+  menu.classList.add('translate-x-full');
+  overlay.classList.add('hidden');
+});
+</script>
+</body>
+</html>

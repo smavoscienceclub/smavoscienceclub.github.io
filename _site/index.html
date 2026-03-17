@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SSC</title>
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+<nav id="navbar"
+    class="bg-white shadow-sm fixed top-0 left-0 w-full z-50
+          bg-white/80 backdrop-blur
+          transition-all duration-300">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    
+    <!-- Logo -->
+    <div class="text-xl font-bold text-primary">
+     <a href="/">SSC</a>
+    </div>
+
+    <!-- RIGHT SIDE WRAPPER -->
+    <div class="flex items-center gap-6">
+     
+     <!-- Menu (desktop) -->
+     <div class="hidden md:flex space-x-8 text-gray-600 font-medium">
+       <a href="/tentang-kami/" class="hover:text-primary">Tentang Kami</a>
+        <a href="/berita/" class="hover:text-primary">Artikel</a>
+       <a href="#" class="hover:text-primary">Divisi</a>
+     </div>
+
+     <!-- CTA (desktop) -->
+     <a href="#" class="hidden md:block bg-primary text-white px-4 py-2 rounded-lg hover:opacity-90">
+       Hubungi
+     </a>
+
+     <!-- Hamburger (mobile) -->
+     <button id="menuBtn" class="md:hidden text-2xl">
+       ☰
+     </button>
+
+    </div>
+
+  </div>
+</nav>
+<!-- Spacer for navbar height -->
+<div id="navbar-spacer" class="h-16"></div>
+<script>
+  // Adjust the spacer height to match navbar height
+  function adjustNavbarSpacer() {
+    const navbar = document.getElementById('navbar');
+    const spacer = document.getElementById('navbar-spacer');
+    spacer.style.height = navbar.offsetHeight + 'px';
+  }
+  window.addEventListener('resize', adjustNavbarSpacer);
+  window.addEventListener('DOMContentLoaded', adjustNavbarSpacer);
+
+  // Sticky/fixed effect
+  window.addEventListener('scroll', function() {
+    const navbar = document.getElementById('navbar');
+    if (window.scrollY > 0) {
+     navbar.classList.add('shadow-md', 'bg-white/90', 'backdrop-blur');
+    } else {
+     navbar.classList.remove('shadow-md', 'bg-white/90', 'backdrop-blur');
+    }
+  });
+</script>
+<!-- Overlay -->
+<div id="overlay"
+     class="fixed inset-0 bg-black/40 z-40 hidden md:hidden"></div>
+
+<!-- Side drawer -->
+<div id="mobileMenu"
+     class="fixed top-0 right-0 h-full w-64 bg-white z-50
+            transform translate-x-full transition-transform duration-300
+            md:hidden">
+
+  <div class="p-6 space-y-4 font-medium text-gray-700">
+
+    <a href="#" class="block">Tentang Kami</a>
+    <a href="#" class="block">Artikel</a>
+    <a href="#" class="block">Divisi</a>
+
+    <a href="#" class="block mt-4 bg-primary text-white px-4 py-2 rounded-lg text-center">
+      Hubungi
+    </a>
+
+  </div>
+</div>
+<!-- Landing -->
+<main>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SSC</title>
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+
+<!-- Landing -->
+
+<section class="relative bg-gray-900">
+  
+  <a href="/2026/02/22/daftar-peserta-lolos-osn-tingkat-sekolah-tahun-2026.html" class="block group">
+    
+    <!-- Background image -->
+    <div class="relative h-screen  w-full overflow-hidden">
+      <img 
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Ayzat88t7UFPJA2adyG6ahHT54WebtFhyg&s"
+        class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500"
+      >
+
+      <!-- Gradient overlay biar teks kebaca -->
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+
+      <!-- Text content -->
+      <div class="absolute bottom-0 left-0 p-6 md:p-10 max-w-2xl">
+        <p class="text-sm text-gray-200 mb-2">Terbaru</p>
+        
+        <h2 class="text-3xl md:text-4xl font-bold text-white group-hover:text-gray-200 transition" style="text-shadow: 0 2px 8px rgba(0,0,0,0.6);">
+          Daftar Peserta Lolos OSN Tingkat Sekolah Tahun 2026
+        </h2>
+        
+		<p class="mt-3 text-white mix-blend-difference relative z-10" style="text-shadow: 0 2px 8px rgba(0,0,0,0.6);">
+		  <p>Sebanyak 45 siswa SMAN 2 Cibinong berhasil lolos dalam Seleksi Olimpiade Sains Nasional (OSN) Tingkat Sekolah Tahun 2026. Para peserta terpilih berasal dari sembilan bidang lomba, yaitu Matematika, Informatika, Kimia, Geografi, Ekonomi, Kebumian, Fisika, Astronomi, dan Biologi, dengan masing-masing bidang meloloskan lima siswa terbaik.</p>
+
+
+		</p>
+      </div>
+
+    </div>
+
+  </a>
+  <!-- No code needed at $PLACEHOLDER$. 
+  To use _layouts in Jekyll, move your navbar and shared HTML into a file like _layouts/default.html. 
+  Then, in your index.html and other pages, use front matter like: 
+  ---
+  layout: default
+  ---
+
+  And put only the unique content in each page. 
+  The layout will automatically wrap your content, so you don't repeat the navbar code. 
+  -->
+</section>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+
+</script>	
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: '#1e40af',
+        }
+      }
+    }
+  }
+</script>
+<script>
+const btn = document.getElementById('menuBtn');
+const menu = document.getElementById('mobileMenu');
+const overlay = document.getElementById('overlay');
+
+btn.addEventListener('click', () => {
+  menu.classList.remove('translate-x-full');
+  overlay.classList.remove('hidden');
+});
+
+overlay.addEventListener('click', () => {
+  menu.classList.add('translate-x-full');
+  overlay.classList.add('hidden');
+});
+</script>
+</body>
+</html>
+</main>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+
+</script>	
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: '#1e40af',
+        }
+      }
+    }
+  }
+</script>
+<script>
+const btn = document.getElementById('menuBtn');
+const menu = document.getElementById('mobileMenu');
+const overlay = document.getElementById('overlay');
+
+btn.addEventListener('click', () => {
+  menu.classList.remove('translate-x-full');
+  overlay.classList.remove('hidden');
+});
+
+overlay.addEventListener('click', () => {
+  menu.classList.add('translate-x-full');
+  overlay.classList.add('hidden');
+});
+</script>
+</body>
+</html>

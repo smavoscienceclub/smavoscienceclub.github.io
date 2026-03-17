@@ -1,0 +1,25 @@
+---
+layout: default
+title: berita
+---
+<ul>
+    {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url }}" class="block no-underline">
+                <div class="article article-{{ post.id }} article-{{ forloop.index }} flex flex-col mx-auto my-8 w-full max-w-4xl border border-gray-200 rounded-xl bg-gradient-to-r from-white to-gray-50 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    {% if post.image %}
+                        <div class="w-full mb-4">
+                            <img src="{{ post.image }}" alt="Thumbnail" class="w-full h-48 object-cover rounded-xl">
+                        </div>
+                    {% endif %}
+                    <div class="flex-1 p-6">
+                        <h2 class="text-2xl font-extrabold text-gray-800 mb-2 hover:text-blue-600 transition-colors duration-200">{{ post.title }}</h2>
+                        {{ post.content | strip_html | truncate: 200, "..." }}
+                        <br>
+                        <span class="text-sm text-gray-500 mb-4">{{ post.date | date: "%B %d, %Y" }}</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+    {% endfor %}
+</ul>
