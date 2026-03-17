@@ -101,3 +101,7 @@ Berikut adalah daftar peserta yang lolos pada masing-masing bidang:
 | 3   | GRASELA RIYANTI          | XI-D3 | 70          |
 | 4   | ABDUL GHOFAR             | X-10  | 67          |
 | 5   | PRISCILIA MICHELLE PASAU | X-4   | 68          |
+
+
+
+Perlu diperhatikan bahwa urutan dalam tabel di atas tidak menunjukkan peringkat akhir. Informasi lebih lanjut terkait jadwal pembinaan, teknis pelaksanaan, serta tahapan seleksi berikutnya akan disampaikan oleh pihak sekolah melalui kanal resmi.
