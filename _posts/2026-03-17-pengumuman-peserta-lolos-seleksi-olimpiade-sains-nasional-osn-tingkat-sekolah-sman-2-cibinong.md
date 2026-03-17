@@ -1,6 +1,5 @@
 ---
-title: Pengumuman Peserta Lolos Seleksi Olimpiade Sains Nasional (OSN) Tingkat
-  Sekolah SMAN 2 Cibinong
+title: Pengumuman Peserta Lolos Seleksi Olimpiade Sains Nasional (OSN) Tingkat Sekolah SMAN 2 Cibinong
 date: 2026-03-17T20:37:00.000Z
 image: /assets/img/uploads/logo-osn.webp
 ---
