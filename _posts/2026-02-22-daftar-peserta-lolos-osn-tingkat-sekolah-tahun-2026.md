@@ -1,6 +1,7 @@
 ---
-title: Pengumuman Peserta Lolos Seleksi Olimpiade Sains Nasional (OSN) Tingkat Sekolah SMAN 2 Cibinong
-date: 2026-03-17T20:28:00.000Z
+title: Pengumuman Peserta Lolos Seleksi Olimpiade Sains Nasional (OSN) Tingkat
+  Sekolah SMAN 2 Cibinong
+date: 2026-03-18T11:50:00.000Z
 image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Ayzat88t7UFPJA2adyG6ahHT54WebtFhyg&s
 ---
 SMAN 2 Cibinong secara resmi mengumumkan daftar peserta yang berhasil lolos dalam seleksi Olimpiade Sains Nasional (OSN) tingkat sekolah. Kegiatan seleksi ini merupakan bagian dari upaya sekolah dalam menjaring siswa-siswi terbaik yang memiliki potensi unggul di bidang sains untuk mewakili sekolah ke tahap selanjutnya.
